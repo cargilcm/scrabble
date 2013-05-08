@@ -11,6 +11,7 @@ text = '''1 point: E ×12, A ×9, I ×9, O ×8, N ×6, R ×6, T ×6, L ×4, S ×
 8 points: J ×1, X ×1
 10 points: Q ×1, Z ×1'''
 letters = ''
+points = ''
 point_re = re.compile('^(?P<point>\d+) point')
 letnum_re = re.compile('(?P<letter>[A-Z]) ×(?P<number>\d+)')
 for line in text.split('\n'):
@@ -19,7 +20,8 @@ for line in text.split('\n'):
   letnum_ms = letnum_re.findall(line)
   for let, num in letnum_ms:
       letters += let*int(num)
+      points += str(num)
 letters += '  ' # add two blanks
 print "'%s'" % letters
-
+print "'%s'" % points
     
