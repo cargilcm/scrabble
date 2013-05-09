@@ -3,7 +3,7 @@ AAAAAAAAAIIIIIIIIIOOOOOOOON\
 NNNNNRRRRRRTTTTTTLLLLSSSSUU\
 UUDDDDGGGBBCCMMPPFFHHVVWWYY\
 KJXQZ  '; // created with ./bin/parse_letter_distributions.py and then added two blanks
-
+  
 exports.getNewAndRemainingTiles = function(oldPlayerTiles, oldRemainingTiles){
     var newTiles = ''
     , newRemainingTiles = oldRemainingTiles
